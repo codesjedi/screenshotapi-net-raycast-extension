@@ -1,0 +1,60 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "screenshotapi-net",
+  "title": "Screenshotapi.net",
+  "description": "take and store your web screenshots, now in raycast",
+  "icon": "command-icon.png",
+  "author": "yvysunu",
+  "categories": [
+    "Design Tools",
+    "Developer Tools",
+    "Web"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "take",
+      "title": "take",
+      "subtitle": "take your screenshot from clipboard",
+      "description": "take a screenshot of a website url stored in your clipboard",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "key": "apiKey",
+      "name": "apiKey",
+      "type": "textfield",
+      "required": true,
+      "title": "API Key",
+      "description": "Your API key",
+      "label": "API Key",
+      "data": [
+        {
+          "title": "API Key",
+          "value": "apiKey"
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.70.0",
+    "@raycast/utils": "^1.13.5",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.6",
+    "@types/node": "20.8.10",
+    "@types/react": "18.2.27",
+    "eslint": "^8.51.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
