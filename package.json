@@ -18,6 +18,13 @@
       "subtitle": "take your screenshot from clipboard",
       "description": "take a screenshot of a website url stored in your clipboard",
       "mode": "view"
+    },
+    {
+      "name": "take-from-clipboard",
+      "title": "take screenshot from clipboard",
+      "description": "take a screenshot from a website which url is copied in your clipboard",
+      "mode": "view",
+      "icon": "command-icon.png"
     }
   ],
   "preferences": [
