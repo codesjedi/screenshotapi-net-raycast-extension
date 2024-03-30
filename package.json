@@ -3,7 +3,7 @@
   "name": "screenshotapi-net",
   "title": "Screenshotapi.net",
   "description": "take and store your web screenshots, now in raycast",
-  "icon": "command-icon.png",
+  "icon": "favicon.png",
   "author": "yvysunu",
   "categories": [
     "Design Tools",
@@ -14,17 +14,19 @@
   "commands": [
     {
       "name": "take",
-      "title": "take",
-      "subtitle": "take your screenshot from clipboard",
-      "description": "take a screenshot of a website url stored in your clipboard",
-      "mode": "view"
+      "title": "screenshot",
+      "subtitle": "take a quick screenshot",
+      "description": "take a quick screenshot",
+      "mode": "view",
+      "icon": "favicon.png"
     },
     {
       "name": "take-from-clipboard",
-      "title": "take screenshot from clipboard",
+      "title": "screenshot from clipboard",
       "description": "take a screenshot from a website which url is copied in your clipboard",
       "mode": "view",
-      "icon": "command-icon.png"
+      "icon": "favicon.png",
+      "subtitle": "take a screenshot from your clipboard"
     }
   ],
   "preferences": [
@@ -33,8 +35,8 @@
       "name": "apiKey",
       "type": "textfield",
       "required": true,
-      "title": "API Key",
-      "description": "Your API key",
+      "title": "Your screenshotapi.net API Key",
+      "description": "Your API key, signup for free at screenshotapi.net and grab one",
       "label": "API Key",
       "data": [
         {
